@@ -15,9 +15,9 @@ namespace ConsoleApp22
         {
             var ConfigurationBuilder = new ConfigurationBuilder()
 #if DEBUG
-            .AddJsonFile("jsconfig1.json")
+            .AddJsonFile("appsettings.debug.json")
 #else
-                .AddJsonFile("json_release.json")
+                .AddJsonFile("appsettings.release.json")
 #endif
                 .Build();
 
